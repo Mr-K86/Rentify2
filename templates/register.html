@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
+    </head>
+<body>
+    <!--Navbar-->
+<nav class ="navbar">
+<div class ="logo">Rentify</div>
+
+<ul class ="nav-links">
+<li><a href="/">Home</a></li>
+    <li><a href="/items">Items</a></li>
+    <li><a href="/register">Register</a></li>
+    <li> <a href="/login">Login</a></li>
+    <li> <a href="/contact">Contact</a> </li>
+
+</ul>
+</nav>
+
+
+<!-- Registration form -->
+<div class="form-container">
+    <h2>Register</h2>
+
+    <!--IMPORTANT: action + method-->
+
+    <form action="/register" method="POST">
+        <!--full name-->
+        <label>Full Name</label>
+        <input type ="text" name="Full_Name" placeholder="Enter your full name" required> 
+        <br> <br>
+ <!--email-->
+
+        <label>Email</label>
+        <input type ="email" name="Email" placeholder="Enter your email" required> 
+        <br> <br>
+
+        <label>Password</label>
+        <input type="password" name="Password" placeholder="Enter your password" required> <br>
+
+        <button type="submit">Register</button>
+
+    </form>
+</div>
+<!--Footer-->
+<footer>
+<p>© 2026 Rentify. All Rights Reserved.</p>
+ </footer>
+
+
+</body>
+</html>
