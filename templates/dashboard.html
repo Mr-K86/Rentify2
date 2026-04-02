@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='mystyle.css') }}">
+
+
+</head>
+
+<body>
+
+    <nav>
+    <a href="/dashboard">Dashboard</a>
+    <a href="/items">Items</a>
+    <a href="/contact">Contact</a>
+    <a href="/logout">Logout</a>
+    </nav>
+
+<h1>Welcome {{ session['user'] }}</h1>
+
+<div class="card">
+    <h2>My Rentals</h2>
+</div>
+
+<div class="card">
+    <h2>Available Items</h2>
+</div>
+
+<div class="card">
+    <h2>My Profile</h2>
+</div>
+
+</body>
+</html>
